@@ -19,13 +19,13 @@ $ nest generate service product
 ```
 
 ## Create Product
-![01-Create Product.png](./assets/01-Create Product.png)
+![01-Create Product.png](./assets/01-Create%20Product.png)
 
 ## Get Products
-![02-Get Products.png](./assets/02-Get Products.png)
+![02-Get Products.png](./assets/02-Get%20Products.png)
 
 ## Get Single Product
-![03-Get Product.png](./assets/03-Get Single Product.png)
+![03-Get Product.png](./assets/03-Get%20Single%20Product.png)
 
 ## TODOS
 - Dockerize project and integrate kubernetes
