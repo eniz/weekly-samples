@@ -1,0 +1,7 @@
+# Ignore folder named node_modules
+node_modules/
+bower_components/
+build/
+.vscode/
+.idea/
+.DS_Store
