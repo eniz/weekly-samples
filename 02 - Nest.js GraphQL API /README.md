@@ -13,12 +13,12 @@ I make use of PostgreSQL and combine TypeORM.
 For creating postgresql db 
 ```bash
 $ sudo -u postgres psql
-postgres=# createdb test_db
+postgres=# createdb poke_db
 postgres=# \q
 $ psql
 poke_db=# \password
-rohan=# Enter new password:
-rohan=# Retype new password:
+poke_db=# Enter new password:
+poke_db=# Retype new password:
 ```
 
 Sample Queries
