@@ -2,7 +2,7 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "username": "root",
+  "username": "postgres",
   "password": "password",
   "database": "poke_db",
   "entities": ["dist/**/*.entity.js"],

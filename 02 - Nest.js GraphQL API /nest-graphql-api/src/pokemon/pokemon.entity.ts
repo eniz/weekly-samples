@@ -1,10 +1,7 @@
-import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
-/*
-* An entity is a class that maps to a particular database table. In this case, the product table.
-*/
 @Entity('pokemon')
-export class Pokemon extends BaseEntity {
+export class Pokemon {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 

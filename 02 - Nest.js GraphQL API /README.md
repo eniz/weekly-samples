@@ -67,3 +67,9 @@ $ npm run start:dev
 ```
 
 Navigate to localhost:3000/graphql
+
+## Query
+![01-Create Product.png](./assets/query.png)
+
+## Mutation
+![02-Get Products.png](./assets/mutation.png)
