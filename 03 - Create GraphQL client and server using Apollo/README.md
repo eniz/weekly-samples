@@ -11,3 +11,9 @@ The tools provided by Apollo are mainly 3: Client, Server, Engine.
 - Apollo Client helps you consume a GraphQL API
 - Apollo Server is the server part of GraphQL
 - Apollo Engine is a hosted infrastructure (SAAS) that serves as a middle man between the client and your server, providing caching, performance reporting, load measurement, error tracking, schema field usage statistics, historical stats and many more goodies. 
+
+## Query
+![curl.png](./assets/curl.png)
+
+## Browser
+![browser.png](./assets/browser.png)
