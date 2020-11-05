@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+
 // Install the TypeORM module for creating a connection database
 import { TypeOrmModule} from "@nestjs/typeorm";
 import { join } from 'path';
@@ -27,7 +26,5 @@ const DB_PASSWORD = 'password';
     }),
     ProductModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
