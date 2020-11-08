@@ -1,10 +1,14 @@
-const { ApolloServer } = require('apollo-server');
+const { ApolloServer } = require("apollo-server");
 
-const typeDefs = require('./typeDefs');
-const resolvers = require('./resolvers');
+const typeDefs = require("./typeDefs");
+const resolvers = require("./resolvers");
 
-const server = new ApolloServer({ typeDefs, resolvers })
+const apolloServer = new ApolloServer({ typeDefs, resolvers });
 
-server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${url}`)
-});
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
+export default apolloServer.createHandler({ path: "/api/graphql" });
