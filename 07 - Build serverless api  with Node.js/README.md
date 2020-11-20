@@ -25,3 +25,22 @@ Claudia is a Node.js library that eases the deployment of Node.js projects to AW
  - Claudia is focused on Node.js.
  
 Claudia API Builder is an API tool that helps you handle all your incoming API Gate- way requests and responses, as well as their configuration, context, and parameters, and enables you to have internal routing within your Lambda function. It has an Express-like endpoint syntax, so if you are familiar with Express, Claudia API Builder will be easy to use.
+
+One of Claudia’s main goals is single-command deployment, deploying your API takes just a simple claudia create command. 
+This command requires only two options: the AWS region where you want your API to be deployed, and your application’s entry point. 
+
+### Deploying an API to AWS Lambda and API Gateway using Claudia
+    
+        claudia create --region eu-central-1 --api-module api
+        
+### When a serverless API is not the solution
+
+Serverless APIs can be powerful and incredibly scalable, but in certain situations traditional APIs are a much better solution, such as the following:
+
+- When request time and latency are critical. You can’t guarantee minimal latency with serverless applications.
+- When you need to guarantee a certain level of availability. In most cases, AWS will provide a pretty good level of availability, but sometimes that’s not enough.
+- When your application requires intensive and complex computing.
+- When your API requires compliance with a specific standard. AWS Lambda and
+  API Gateway might not be flexible enough.
+  
+    
