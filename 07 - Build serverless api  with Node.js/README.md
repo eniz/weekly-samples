@@ -43,4 +43,7 @@ Serverless APIs can be powerful and incredibly scalable, but in certain situatio
 - When your API requires compliance with a specific standard. AWS Lambda and
   API Gateway might not be flexible enough.
   
+### Storing Data AWS DynamoDB
+Amazon DynamoDB, a popular NoSQL database that can be connected to AWS Lambda easily. To be able to connect to your DynamoDB table from Node.js, you need to install the AWS SDK for Node.js.
+  
     

@@ -5,10 +5,13 @@
   "main": "api.js",
   "scripts": {
     "create": "claudia create --region eu-central-1 --api-module api",
-    "update": "claudia update --cache-api-config apiConfig"
+    "update": "claudia update --cache-api-config apiConfig",
+    "putRolePolicy": "aws iam put-role-policy --role-name pizza-api-executor --policy-name PizzaApiDynamoDB --policy-document file://./roles/dynamodb.json",
+    "scan": "aws dynamodb scan --table-name pizza-orders --region eu-central-1 --output json"
   },
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.797.0",
     "claudia-api-builder": "^3.0.2"
   },
   "devDependencies": {
