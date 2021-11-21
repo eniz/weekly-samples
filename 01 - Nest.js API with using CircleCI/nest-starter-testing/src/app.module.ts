@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 
 // Install the TypeORM module for creating a connection database
-import { TypeOrmModule} from "@nestjs/typeorm";
+import { TypeOrmModule } from '@nestjs/typeorm';
 import { join } from 'path';
 import { ProductModule } from './product/product.module';
 
@@ -25,6 +25,10 @@ const DB_PASSWORD = 'password';
       synchronize: true,
     }),
     ProductModule,
+    ConfigModule.forRoot({
+      isGlobal: true,
+      load: [configuration],
+    }),
   ],
 })
 export class AppModule {}
